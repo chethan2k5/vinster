@@ -3,7 +3,7 @@
 	<h1>
 	<%= post.title %><br>
 	<%= post.description %>
-	<%= image_tag post.image %>
+	<%= image_tag(post.image, :alt => "home image", :width => 200, :height => 200)%>
 </div>
 <% end %>
 
