@@ -6,7 +6,8 @@
 </H2><br>
 <%= simple_form_for @post do |f| %>
 	<%= f.input :title , label: 'what is this image about' , placeholder: 'Drunken monkey,racing rhino,silly cat'%>
-	<%= f.input :description , label: 'Tell me more', placeholder: 'This monkey caught a wiff and falls out of the tree'%><br>
+	<%= f.input :description , label: 'Tell me more', placeholder: 'This monkey caught a wiff and falls out of the tree'%>
+	<%= f.input :image , label: 'Upload images here', placeholder: 'no files chosen' %> <br>
 	<%= f.button :submit, :class => 'btn btn-warning'%>
 <% end %>
 </div>
